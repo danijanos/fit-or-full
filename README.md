@@ -8,9 +8,10 @@ The application can answer you all of these questions!
 ### Group Members and their neptun code:
 |#               |Name                           |Neptun code                  |
 |----------------|-------------------------------|-----------------------------|
-|1               |János Dani                     |*D6DH5I*                     |
-|2               |Lajos Olcsák                   |                             |
-|3               |Zoltán Beregvári               |                             |
+|1               |András Haut                    |*ONYZVW*                     |
+|2               |János Dani                     |*D6DH5I*                     |
+|3               |Lajos Olcsák                   |                             |
+|4               |Zoltán Beregvári               |                             |
 ___
 ## The topic
 > - **Behavior:**
