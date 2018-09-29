@@ -11,7 +11,7 @@ The application can answer you all of these questions!
 |1               |András Haut                    |*ONYZVW*                     |
 |2               |János Dani                     |*D6DH5I*                     |
 |3               |Lajos Olcsák                   |                             |
-|4               |Zoltán Beregvári               |                             |
+|4               |Zoltán Beregvári               |*TRFTWP*                     |
 ___
 ## The topic
 > - **Behavior:**
