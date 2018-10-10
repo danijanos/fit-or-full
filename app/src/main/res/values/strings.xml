@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fit or Full</string>
+    <string name="google_maps_API_key">AIzaSyCfYmtczxGStnw0lRqM_ZaMGj9C8Ed1dQo</string>
 </resources>
