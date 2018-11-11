@@ -6,7 +6,6 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import hu.uniobuda.nik.fitorfull.adapters.RestaurantListAdapter
 import hu.uniobuda.nik.fitorfull.models.Restaurant
-import java.util.jar.Attributes
 
 class RestaurantListActivity : AppCompatActivity() {
 
@@ -22,5 +21,9 @@ class RestaurantListActivity : AppCompatActivity() {
 
         viewManager = LinearLayoutManager(this)
         viewAdapter = RestaurantListAdapter(restaurants)
+
+        recyclerView = findViewById<RecyclerView>(R.id.restaurant_list_recycler_view).apply {
+            setHasFixedSize(true)
+        }
     }
 }
