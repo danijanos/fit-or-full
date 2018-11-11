@@ -23,4 +23,11 @@ class RestaurantListAdapter(
 
         return RestaurantViewHolder(restaurantView)
     }
+
+    override fun onBindViewHolder(
+            holder: RestaurantViewHolder,
+            position: Int) {
+
+        holder.restaurantView.text = restaurantList[position].name
+    }
 }
