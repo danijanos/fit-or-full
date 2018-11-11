@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import hu.uniobuda.nik.fitorfull.Models.Restaurant
+import hu.uniobuda.nik.fitorfull.models.Restaurant
 
 class RestaurantListActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package hu.uniobuda.nik.fitorfull.Models
+package hu.uniobuda.nik.fitorfull.models
 
 import android.os.Parcel
 import android.os.Parcelable

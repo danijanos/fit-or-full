@@ -1,10 +1,10 @@
-package hu.uniobuda.nik.fitorfull.Adapters
+package hu.uniobuda.nik.fitorfull.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
-import hu.uniobuda.nik.fitorfull.Models.Restaurant
+import hu.uniobuda.nik.fitorfull.models.Restaurant
 import hu.uniobuda.nik.fitorfull.R
 
 class RestaurantListAdapter(
@@ -30,4 +30,7 @@ class RestaurantListAdapter(
 
         holder.restaurantView.text = restaurantList[position].name
     }
+
+    // invoked by the layout manager
+    override fun getItemCount() = restaurantList.size
 }
