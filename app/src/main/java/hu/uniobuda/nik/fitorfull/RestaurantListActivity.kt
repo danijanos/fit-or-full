@@ -25,6 +25,7 @@ class RestaurantListActivity : AppCompatActivity() {
         recyclerView = findViewById<RecyclerView>(R.id.restaurant_list_recycler_view).apply {
             setHasFixedSize(true)
             layoutManager = viewManager
+            adapter = viewAdapter
         }
     }
 }
