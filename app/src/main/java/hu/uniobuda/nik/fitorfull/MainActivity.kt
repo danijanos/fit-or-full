@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     fun createLocalDatabase() {
         val FILENAME = "restaurants.dat"
-        val saveThis = "Helló Storage!"
+        val saveThis = "markers"
         val fos = openFileOutput(FILENAME, Context.MODE_PRIVATE)
         fos.write(saveThis.toByteArray())
         fos.close()
