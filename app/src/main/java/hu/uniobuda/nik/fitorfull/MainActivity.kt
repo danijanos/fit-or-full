@@ -60,17 +60,21 @@ class MainActivity : AppCompatActivity() {
 
     fun CreateMarkers()
     {
-        val location1 = LatLng(47.53505161, 19.03607726)
-        googleMap.addMarker(MarkerOptions().position(location1).title("Gombás étterem [SZABAD HELYEK: 12]").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))
-
-        val location2 = LatLng(47.5343997, 19.03706431)
-        googleMap.addMarker(MarkerOptions().position(location2).title("'Fater főzte' vendéglő [SZABAD HELYEK: 0]").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)))
-
-        val location3 = LatLng(47.53597152, 19.03395295)
-        googleMap.addMarker(MarkerOptions().position(location3).title("Rekettyés étterem [SZABAD HELYEK: 4]").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))
+        val restaurants = ArrayList<Restaurant>()
+        restaurants.add(Restaurant("Gombás étterem",47.53505161,19.03607726,12,18))
+        restaurants.add(Restaurant("'Fater főzte' vendéglő",47.5343997,19.03706431,0,32))
+        restaurants.add(Restaurant("'Rekettyés étterem",47.53597152,19.03395295,4,42))
 
 
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location1, 15f))
+        for (item in restaurants) {
+            val location = LatLng(item.lat, item.lon)
+            val markerColor : Float
+            if (item.space_free==0) markerColor = BitmapDescriptorFactory.HUE_RED
+            else markerColor = BitmapDescriptorFactory.HUE_GREEN
+            googleMap.addMarker(MarkerOptions().position(location).title(item.name+ "[SZABAD HELYEK: "+item.space_free.toString()+"/"+item.space_max.toString()+"]").icon(BitmapDescriptorFactory.defaultMarker(markerColor)))
+        }
+
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(restaurants[0].lat,restaurants[0].lon), 15f))
     }
 
     @SuppressLint("MissingPermission")
