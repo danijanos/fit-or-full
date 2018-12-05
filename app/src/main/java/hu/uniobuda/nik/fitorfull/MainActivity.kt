@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var mapFragment: SupportMapFragment
     lateinit var googleMap: GoogleMap
+    lateinit var restaurants_storage: Restaurant
 
     fun createLocalDatabase() {
         val FILENAME = "restaurants.dat"
@@ -51,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(OnMapReadyCallback {
             googleMap = it
-
             googleMap.isMyLocationEnabled = true
 
             CreateMarkers();
