@@ -3,4 +3,6 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574b</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="restaurantFit">#36ca22</color>
+    <color name="restaurantFull">#d42724</color>
 </resources>

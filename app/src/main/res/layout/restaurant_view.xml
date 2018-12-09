@@ -9,9 +9,30 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/restaurant_name"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/restaurant_address"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/restaurant_opening_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/restaurant_phone_number"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         />
 
     <android.support.v7.widget.AppCompatTextView

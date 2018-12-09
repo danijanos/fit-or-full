@@ -31,7 +31,13 @@ class RestaurantListAdapter(
             position: Int) {
 
         holder.restaurantView.restaurant_name.text = restaurantList[position].name
+        holder.restaurantView.restaurant_address.text = restaurantList[position].address
+        holder.restaurantView.restaurant_opening_hours.text = restaurantList[position].openingHours
+        holder.restaurantView.restaurant_phone_number.text = restaurantList[position].phoneNumber
         holder.restaurantView.restaurant_max_space.text = restaurantList[position].maxSpace
+
+//        if (restaurantList[position].freeSpace == "0")
+//            holder.restaurantView.restaurant_max_space.textColors = ColorStateList(25)
     }
 
     // invoked by the layout manager
