@@ -19,16 +19,18 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".RestaurantListActivity"></activity>
+        <activity android:name=".RestaurantListActivity">
+
+        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCfYmtczxGStnw0lRqM_ZaMGj9C8Ed1dQo"/>
+
     </application>
 
 </manifest>

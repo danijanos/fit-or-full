@@ -3,4 +3,6 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574b</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="appMainButtonBackground">#00a5a2</color>
+    <color name="appMainButtonForeground">#fd0000</color>
 </resources>
