@@ -7,9 +7,11 @@ data class Restaurant(
         var name: String,
         var address: String,
         var openingHours: String,
-        var phoneNumber: String
+        var phoneNumber: String,
+        var maxSpace: String
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
+            parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
@@ -21,6 +23,7 @@ data class Restaurant(
         parcel.writeString(address)
         parcel.writeString(openingHours)
         parcel.writeString(phoneNumber)
+        parcel.writeString(maxSpace)
     }
 
     override fun describeContents(): Int {
