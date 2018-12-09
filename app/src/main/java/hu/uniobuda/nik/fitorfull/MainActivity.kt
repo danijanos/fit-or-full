@@ -3,6 +3,7 @@ package hu.uniobuda.nik.fitorfull
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
@@ -24,9 +25,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var restaurants_storage: Restaurant
 
     companion object {
-        val Restaurant = null
+        val RestaurantListActivity = null
     }
 
+    val restaurantList = Intent(this, RestaurantListActivity)
 
     fun createLocalDatabase() {
         val FILENAME = "restaurants.dat"
