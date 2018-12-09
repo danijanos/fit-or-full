@@ -23,6 +23,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var googleMap: GoogleMap
     lateinit var restaurants_storage: Restaurant
 
+    companion object {
+        val Restaurant = null
+    }
+
+
     fun createLocalDatabase() {
         val FILENAME = "restaurants.dat"
         val saveThis =
