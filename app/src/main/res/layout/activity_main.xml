@@ -13,7 +13,7 @@
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_restaurants_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
